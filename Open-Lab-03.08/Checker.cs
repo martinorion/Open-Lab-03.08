@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Open_Lab_03._08
 {
@@ -6,7 +6,11 @@ namespace Open_Lab_03._08
     {
         public bool IsPlural(string word)
         {
-            throw new NotImplementedException();
+            if (word.EndsWith("s"))
+                return true;
+            else
+                return false;
+            ;
         }
     }
 }
